@@ -1,0 +1,58 @@
+.blackjackgame {
+  font-family: fantasy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .player-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+  }
+  .player-control {
+    button {
+      font-family: fantasy;
+      width: 80px;
+      margin: 5px;
+    }
+  }
+  .name {
+    text-align: center;
+    font-size: 25px;
+    .dealer {
+      margin: 0;
+    }
+  }
+  .score-board-container {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .score-board {
+      font-size: 15px;
+      position: relative;
+      div {
+        background: white;
+        padding: 15px;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        &:first-child {
+          border-radius: 20px 20px 0 0;
+        }
+        &:last-child {
+          border-bottom: 1px solid black;
+          border-radius: 0 0 20px 20px;
+        }
+      }
+    }
+    .reshuffle {
+      font-family: fantasy;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.dashboard {
+  background: white;
+  border: 1px solid black;
+  float: right;
+  font-size: 15px;
+  .reshuffle {
+    margin: 10px auto 10px;
+    display: block;
+    
+  }
+  .dealerScore {
+    padding: 0 15px;
+    border-top: 1px solid black;
+  }
+  .playerScore {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0 15px;
+      border-top: 1px solid black;
+    }
+  }
+}

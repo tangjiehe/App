@@ -1,0 +1,48 @@
+.sidebar {
+  position: relative;
+  z-index: 2;
+  a {
+    color: #999;
+    margin: 28px 28px 0;
+    transition: color 0.3s;
+    &:link {
+      text-decoration: none;
+    }
+    &:hover {
+      color: rgb(62, 241, 232);
+    }
+  }
+  button {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    box-shadow: none;
+  }
+  .sidemenu {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    background: #111;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    width: 150px;
+    left: -150px;
+    transition: left 0.5s ease-out;
+    &.isShow {
+      left: 0px;
+    }
+    .close {
+      position: absolute;
+      color: #999;
+      right: 5px;
+      top: 0px;
+      transition: color 0.3s;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
